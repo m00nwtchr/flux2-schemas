@@ -9313,7 +9313,8 @@
                 "type": "string"
               },
               "type": "array",
-              "x-kubernetes-list-type": "set"
+              "x-kubernetes-list-type": "set",
+              "x-kubernetes-patch-strategy": "merge"
             },
             "decryption": {
               "description": "Decrypt Kubernetes secrets before applying them on the cluster.",
