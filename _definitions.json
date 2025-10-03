@@ -9257,6 +9257,13 @@
       "type": "object"
     },
     "kustomize.toolkit.fluxcd.io.v1.Kustomization": {
+      "x-kubernetes-group-version-kind": [
+        {
+          "group": "kustomize.toolkit.fluxcd.io",
+          "kind": "Kustomization",
+          "version": "v1"
+        }
+      ],
       "description": "Kustomization is the Schema for the kustomizations API.",
       "properties": {
         "apiVersion": {
@@ -9305,7 +9312,8 @@
               "items": {
                 "type": "string"
               },
-              "type": "array"
+              "type": "array",
+              "x-kubernetes-list-type": "set"
             },
             "decryption": {
               "description": "Decrypt Kubernetes secrets before applying them on the cluster.",
